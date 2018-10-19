@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+  body  {
+    font-family: 'Lato', sans-serif;
+}
+
+.overlay {                        //This affects the curtain nav bar
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {              //This affects the curtain nav bar
+    position: relative;
+    top: 100%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+.overlay a {                  //This affects the curtain nav bar
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {          //This affects the curtain nav bar
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {                //  This affects the curtain nav bar
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+                                          /* This affects the curtain nav bar */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+
+html {                                    /* This affects the whole html file */
+   background-color: grey;
+   font-family: Verdana, Arial, sans-serif;
+   padding-left: 50px;
+   padding-right: 50px;
+}
+
+body {                                          /* This affects the whole body */
+   background-color: white;
+   padding-left: 50px;
+   padding-right: 50px;
+   padding-top: 50px;
+   padding-bottom: 50px;
+}
+
+img {                                                /* This affects the images */
+        display: block;
+        float: right;
+        border-width: 5px;
+        border-style: solid;
+        border-color: black;
+    }
+
+    body > h1 {                                    /* This affects the h1 sections of the body */
+    	margin-left: 20px;
+    	font-size: 2.5em;
+    }
+
+    body > h2 {                                        /* This affects the h2 sections of the body */
+    	margin-left: 30px;
+    	font-size: 1.5em;
+    }
+
+
+    body > p {                                          /* This affects the p sections of the body */
+    	margin-left: 30px;
+    	font-size: 1em;
+    }
+
+    	width: 50%;
+    	float: right;
+    	margin: 0px 10px 10px 10px;
+    }
+                                                               /* This affects the grid sections of the body */
+    .item1 { grid-area: header; }
+    .item2 { grid-area: menu; }
+    .item3 { grid-area: main; }
+    .item4 { grid-area: right; }
+    .item5 { grid-area: footer; }
+
+
+    .grid-container {                                      /* This affects the grid sections of the body */
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-container > div {                                    /* This affects the grid sections of the body */
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+th {                                                       /* This affects the table sections of the body */
+padding: 15px;
+text-align: left;
+}
+
+#Ingredients th {                                           /* This affects the grid sections of the body */
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: left;
+background-color: grey;
+color: black;
+}
+
+table, th, td {                                               /* This affects the table sections of the body */
+border: 1px solid black;
+}
+
+table{
+   margin-left: auto;
+   margin-right: auto;
+}
